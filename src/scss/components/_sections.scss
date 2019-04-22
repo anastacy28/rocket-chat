@@ -1,0 +1,48 @@
+.section-primary,
+.section-opportunity,
+.section-opportunity-secondary,
+.section-video,
+.section-dark,
+.section-light,
+.section-white {
+    padding: $mb-large 0;
+}
+
+.section-dark {
+    background-color: $color-black;
+    box-shadow: 0 2rem 4rem rgba($color-white, .3);
+}
+
+.section-light {
+    background-color: $color-tertiary-light;
+    box-shadow: 0 2rem 4rem rgba($color-tertiary-light, .3);
+}
+
+.section-white {
+    background-color: $color-white;
+
+    &__paragraf {
+        color: $color-black;
+        margin-bottom: $mb-small;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .section-white {
+    
+        &__paragraf {
+            margin-bottom: $mb-small / 2;
+            font-size: .8rem;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-primary,
+    .section-opportunity,
+    .section-opportunity-secondary,
+    .section-video {
+        padding: $mb-small 0;
+    }
+}

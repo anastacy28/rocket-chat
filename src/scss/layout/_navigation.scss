@@ -1,0 +1,113 @@
+.navigation {
+
+   &__toggler {
+     display: none;
+   }
+
+   &__list {
+     list-style: none;
+     display: flex;
+     margin-right: 1.5rem;
+     flex-wrap: wrap;
+
+     li {
+        margin-right: 1rem; 
+        padding: .5rem;
+        transition: all .5s;
+         &:last-child {
+           margin-right: 0;
+         }
+           a {
+            &,
+            &:link,
+            &:visited {
+              color: $color-white;
+              transition: all 3s ease;
+            }
+
+            &:hover {
+              color: $color-primary;
+              text-decoration: none;
+            }
+
+            &:focus {
+              color: $color-white;
+            }
+           }
+
+        &:hover {
+          background-color: $color-white;
+          border-radius: 6px;
+          box-shadow: 0 .5rem 2rem rgba($color-white-deep, .3);
+            a {
+              &:focus,
+              & {
+                color: $color-primary;
+                animation: changeColor .5s ease;
+              }  
+            }
+          }
+        }
+      }
+   }
+
+   @media (max-width: 564px) {
+    .navigation {
+
+      &__toggler {
+        &,
+        &:focus,
+        &:hover {
+        display: block;
+        position: fixed;
+        top: 1.5rem;
+        right: 1rem;
+        text-decoration: none;
+        color: $color-white;
+        transition: all 1s ease;
+      }
+
+      &:hover {
+        color: $color-tertiary-light;
+
+        &:before {
+          background-color: $color-tertiary-light;
+        }
+      }
+
+        &::before {
+          position: absolute;
+          content: "";
+          display: block;
+          width: 30px;
+          height: 28px;
+          background-image: url(../img/svg/list.svg);
+          background-size: cover;
+          top: 0px;
+          left: -36px;
+          background-color: $color-white;
+          border-radius: 45%;
+          transition: all 1s ease;
+        }
+      }
+
+      &__list {
+        display: none;
+        position: absolute;
+        top: 6rem;
+        left: 0;
+        background-color: $color-primary;
+        width: 100%;
+        border-top: 3px solid linear-gradient(to right, rgba($color-white, .2), rgba($color-white, .9), rgba($color-white, .9), rgba($color-white, .2));
+   }
+  }
+}
+
+@media (max-width: 400px) {
+  .navigation__toggler:before {
+    left: -29px;
+    transform: scale(.6);
+  }
+}
+
+

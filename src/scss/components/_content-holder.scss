@@ -1,0 +1,60 @@
+.content-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        width: 50%;
+        height: 200px;
+    }
+ 
+    &__video {
+        width: 100%;
+        height: auto;
+    }
+
+    &__right {
+        width: 40%;
+    }
+}
+
+.open-code {
+
+    .content-holder {
+
+        &__img-holder {
+            height: 200px;
+            overflow: hidden;
+            background-image: linear-gradient(to right bottom, rgba($color-black, .5), 
+            rgba($color-black, 0.5)), url(../img/screen_3.png);
+            background-repeat: repeat-y;
+            animation: positionYHome 50s linear infinite;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .content-holder {
+        justify-content: center;
+        flex-direction: column-reverse;
+    
+        &__left,
+        &__right {
+            width: 80%;
+
+        }
+    }
+
+    .section-light {
+
+        .content-holder {
+            flex-direction: column;
+            
+            &__right {
+                margin-bottom: $mb-medium;
+            }
+        }
+    }
+}

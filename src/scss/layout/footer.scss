@@ -1,0 +1,103 @@
+.footer {
+    background-color: #252e30;
+    color: #919191;
+    padding: 90px 0 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .footer-left, .footer-right {
+        width: 45%;
+        margin-bottom: 90px;
+    }
+}
+.footer-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: "Roboto-Bold", sans-serif;
+    margin-bottom: 44px;
+}
+.footer-description {
+    margin-bottom: 40px;
+}
+.footer-contacts-get {
+    width: 340px;
+    dt, dd {
+        display: inline-block;
+        margin-right: 45px;
+    }
+}
+.form-control, .form-control-textarea {
+    background-color: #4b5456;
+    border-radius: 0;
+    border: 1px solid transparent;
+    margin-bottom: 35px;
+    min-height: 50px;
+    width: 100%;
+    color: #fff;
+}
+
+textarea.form-control {
+    min-height: 280px;
+}
+.footer-bottom {
+    background-color: #191f21;
+    padding: 50px 0;
+  
+}
+.footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    .footer-title {
+        font-size: .875rem;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        color: #4b5456;
+        text-transform: uppercase;
+    }
+}
+.footer-list {
+    display: flex;
+    justify-content: center;
+    li {
+      width: 34px;
+      height: 34px;
+      background-color: #4b5456;
+      margin-right: 10px;
+      border-radius: 30px;
+      padding: 9px;
+      color: #191f21;
+        &:hover {
+            color: #fff;
+        } 
+        a {
+            display: block;
+            text-align: center;
+            color: #191f21;
+            line-height: 40px;
+            font-size: 21px;
+            text-decoration: none;   
+        }
+    }
+}
+
+/* type submit */
+input[type=submit] {
+    display: none;
+}
+
+/* type submit end */
+
+@media (max-width: 960px) {
+    .footer-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        .footer-left, .footer-right {
+            width: 90%;
+            margin: 0 auto 50px;
+        }
+    }
+} 

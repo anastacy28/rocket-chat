@@ -1,0 +1,62 @@
+.wrapper {
+    padding: 0 6%;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-pricetags {
+    width: 1.3125em;
+  }
+  
+  .icon-puzzle {
+    width: 1.09375em;
+  }
+  
+  .icon-puzzle {
+    width: 1.09375em;
+  }
+  
+  .icon-plug {
+    width: 1.0068359375em;
+  }
+  
+  .icon-fighter-jet {
+    width: 1.0712890625em;
+  }
+  
+  .icon-rocket {
+    width: 0.9443359375em;
+  }
+  
+  .icon-linkedin {
+    width: 0.857421875em;
+  }
+  
+  hr {
+    height: 1px;
+    background-image: linear-gradient(to right, rgba($color-white, 0), 
+    rgba($color-white, .5),
+    rgba($color-white, .5),
+    rgba($color-white, 0));
+    border: 0 none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

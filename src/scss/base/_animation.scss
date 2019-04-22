@@ -1,0 +1,21 @@
+@keyframes changeColor {
+
+    50% {
+      color: red;
+    }
+  
+    80% {
+      color: yellow;
+    }
+  
+  }
+
+@keyframes positionYHome {
+    0% {
+        background-position: left 3244px;
+    }
+
+    100% {
+        background-position: left 0;
+    }
+}

@@ -1,0 +1,63 @@
+.chating-content,
+.chating-content-second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    &__left,
+    &__right {
+        width: 30%;
+    }
+
+    &__right {
+        padding: 1rem 2rem;
+
+    }
+
+    &__img-box {
+        box-shadow: 0 1rem 2rem rgba($color-black, .5);
+    }
+}
+
+.chating-content-second {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1150px) {
+    .chating-content,
+    .chating-content-second {
+        
+        &__left,
+        &__right {
+            width: 40%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .chating-content,
+    .chating-content-second {
+        
+        &__left,
+        &__right {
+            width: 60%;
+        }
+
+        &__img-box {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .chating-content,
+    .chating-content-second {
+        
+        &__left,
+        &__right {
+            width: 90%;
+        }
+    }
+}

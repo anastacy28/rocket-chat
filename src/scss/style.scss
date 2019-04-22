@@ -1,0 +1,72 @@
+$font-stack: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+
+@import "~bootstrap/scss/bootstrap";
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+
+ @import "abstracts/variables";
+// @import "abstracts/mixins";
+
+ @import "base/base";
+ @import "base/animation";
+ @import "base/typography";
+//  @import "base/utilities";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+
+
+ @import "components/buttons";
+ @import "components/banner";
+ @import "components/sections";
+ @import "components/content-holder";
+ @import "components/feature-list";
+ @import "components/chating";
+// @import "components/form";
+// @import "components/popup";
+
+html {
+*,
+*:before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+  // This is 1rem
+   	font-size: 62.5%;
+
+   	@media (max-width: 1200px) {
+   		font-size: 61.25%;
+   	}
+
+   	@media (max-width: 900px) {
+   		font-size: 60.5%;
+   	}
+
+   	@media (max-width: 600px) {
+   		font-size: 60%;
+   	}
+}
+}
+
+body {
+  font-family: $font-stack;
+  color: $color-white;
+  background-color: $color-primary;
+}
+
+main {
+	background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), 
+    rgba($color-primary-light, 0.8)), url(../img/bg.jpg);
+    background-size: contain;
+}

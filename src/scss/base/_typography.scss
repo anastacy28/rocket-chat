@@ -1,0 +1,213 @@
+.heading-primary {
+    margin-bottom: $mb-small;
+
+    &__title {
+       font-weight: 700;
+       letter-spacing: 2px;
+       margin-bottom: $mb-small;
+       font-size: 2.4rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        margin-bottom: $mb-medium;
+        color: $color-grey-dark-2;
+    }
+    
+}
+
+.heading-secondary {
+    margin-bottom: $mb-small;
+
+    &__title {
+       font-weight: 700;
+       letter-spacing: 2px;
+       margin-bottom: $mb-small / 2;
+       font-size: 2rem;
+    }
+
+    &__description {
+        font-size: 1.2rem;
+        margin-bottom: $mb-medium / 2;
+        color: $color-white-deep;
+    }
+
+    &__paragraf {
+        margin-bottom: $mb-medium / 2;
+        color: $color-grey-light-2;
+    }
+    
+}
+
+.heading-third {
+    margin-bottom: $mb-small;
+
+    &__under-title {
+        font-size: .8rem;
+        margin-bottom: $mb-small / 2;
+        color: $color-white;
+    }
+
+    &__title {
+       font-weight: 700;
+       letter-spacing: 2px;
+       margin-bottom: $mb-small / 2;
+       font-size: 1.6rem;
+       color: $color-white-deep;
+    }
+
+    &__description {
+        font-size: 1.1rem;
+        margin-bottom: $mb-medium / 2;
+        color: $color-white-deep;
+    }
+
+    &__paragraf {
+        margin-bottom: $mb-medium / 2;
+        color: $color-grey-light;
+    }
+    
+}
+
+.section-light {
+    .heading-third {
+        margin-left: $mb-medium;
+
+        &__paragraf {
+            color: $color-white;
+        }
+    }
+}
+
+.paragraf {
+    font-size: 1.1rem;
+    margin-bottom: $mb-medium / 2;
+    color: $color-white;
+}
+
+.heading-dark {
+
+    &__title {
+        color: $color-grey-dark;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: $mb-small / 2;
+        font-weight: bold;
+    }
+
+    &__title-description {
+        color: $color-black;
+        font-size: 2.5rem;
+        margin-bottom: $mb-small;
+        font-weight: bold;
+    }
+}
+
+@media (max-width: 1300px) {
+    .heading-dark {
+
+        &__title {
+            font-size: .8rem;
+            margin-bottom: $mb-small / 3;
+        }
+    
+        &__title-description {
+            font-size: 1.2rem;
+            margin-bottom: $mb-small / 2;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .heading-primary {
+
+        &__title {
+           font-size: 2rem;
+           margin-bottom: $mb-small / 2;
+        }
+
+        &__description {
+           font-size: 1.3rem;
+           margin-bottom: $mb-medium / 2;
+        }
+    }
+
+    .heading-secondary {
+
+        &__title {
+           font-size: 1.5rem;
+           margin-bottom: $mb-small / 3;
+        }
+
+        &__description {
+           font-size: 1.1rem;
+           margin-bottom: $mb-medium / 3;
+        }
+
+        &__paragraf {
+            margin-bottom: $mb-medium / 3;
+        }
+    }
+
+    .heading-third {
+        margin-bottom: $mb-small / 2;
+    
+        &__title {
+           font-weight: 700;
+           letter-spacing: 1px;
+           margin-bottom: $mb-small / 3;
+           font-size: 1.4rem;
+        }
+    
+        &__description {
+            font-size: .8rem;
+            margin-bottom: $mb-medium / 3;
+        }
+    
+        &__paragraf {
+            margin-bottom: $mb-medium / 4;
+        }
+        
+    }
+
+    .paragraf {
+        margin-bottom: $mb-medium / 4;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-light {
+
+        .heading-third {
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .heading-primary {
+
+        &__title {
+           font-size: 1.4rem ;
+           margin-bottom: $mb-small / 3;
+        }
+
+        &__description {
+           font-size: 1rem;
+           margin-bottom: $mb-medium / 3;
+        }
+    }
+
+    .paragraf {
+        margin-bottom: $mb-medium / 4;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .paragraf {
+        margin-top: 45px;
+    }
+}
+
+
